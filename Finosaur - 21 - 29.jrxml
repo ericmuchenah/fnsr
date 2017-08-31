@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report1" language="groovy" pageWidth="802" pageHeight="555" orientation="Landscape" columnWidth="802" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="c3252912-23e7-4399-af76-2b60d1d982ef">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="11939"/>
+	<subDataset name="MYdataset" uuid="98bcb44e-bdcd-406b-b6cb-9171f134bfa8">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+		<parameter name="Page8" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+		</parameter>
+		<parameter name="Page10" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page11" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+		</parameter>
+		<parameter name="Page12" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page13" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page14" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page15" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+		</parameter>
+		<parameter name="Page19" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page20" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page21" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+		<parameter name="Page22" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource">
+			<parameterDescription><![CDATA[]]></parameterDescription>
+		</parameter>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="xCoordinate" class="java.lang.Integer"/>
+		<field name="yCoordinate" class="java.lang.Double"/>
+		<field name="seriesCategory" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="chartDataSet" uuid="91448d58-a6f7-49b4-ab0d-ceb3d4b002f9">
+		<field name="xCoordinate" class="java.lang.Integer"/>
+		<field name="grossIncome" class="java.lang.Double"/>
+		<field name="afterTaxes" class="java.lang.Double"/>
+		<field name="annualSavings" class="java.lang.Double"/>
+	</subDataset>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["D:\\workspace\\Saurah\\Reports\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="Page8" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page10" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page11" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page12" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page13" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page14" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page15" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page19" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page20" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page21" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="Page22" class="net.sf.jasperreports.engine.data.JRBeanCollectionDataSource"/>
+	<parameter name="CHART_DATA" class="java.util.List" isForPrompting="false"/>
+	<detail>
+		<band height="555">
+			<line>
+				<reportElement x="47" y="77" width="742" height="1" uuid="45c38577-952f-4ab2-8938-6394e5604ba5"/>
+			</line>
+			<staticText>
+				<reportElement x="13" y="480" width="19" height="25" uuid="a3de5729-ff38-4b60-9dc7-5a6ae4b6a35b"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="39" y="38" width="714" height="39" uuid="86cb17ba-f1f7-4020-8374-e2cf1888bbd3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan- Investing: Life Time Allocation For Rebalancing Purposes]]></text>
+			</staticText>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="5fa0c82d-7f4f-4830-96d1-ce8ae0682586"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="034a7a66-81c0-4749-ab6c-9ebf61e42b54"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="317" y="18" width="100" height="20" uuid="74ff4c3c-ea4d-4e5e-8831-ce75fc37f0f1"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="0" width="20" height="86" uuid="07b6e319-772f-41d9-b9b0-ebe04dede99b"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="b87fff31-0471-4d29-b3ec-d973a89f8ed3"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="13" y="395" width="18" height="76" uuid="cd1ba7d0-9ac7-4388-8b8a-8f250296956e"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="13" y="476" width="18" height="1" uuid="66a89267-6820-4886-8535-62f3ef288735"/>
+			</line>
+			<staticText>
+				<reportElement x="51" y="99" width="139" height="20" uuid="312be9ce-c33d-40a7-af2d-fcc38d1beed7"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Life Cycle Asset Allocation
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="118" width="304" height="20" uuid="0a33c000-a17c-4e2a-b1d0-c03ba4d302a7"/>
+				<text><![CDATA[… and this is how we expect to change them to change over time
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="47" y="143" width="338" height="32" uuid="8b4de03e-4e9c-4fd0-a373-1265a175619c"/>
+				<text><![CDATA[Finosaur is the first platform to provide an optimal, dynamic portfolio strategy across the life cycle for a long-term investor
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="199" width="100" height="20" uuid="0485369e-7350-4ac6-bf4c-56649577400d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observations]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="219" width="329" height="261" uuid="fa8a1f5c-bd78-44d9-acab-426f165f6477"/>
+				<text><![CDATA[Finosaur finds an optimal, dynamic portfolio strategy across the life cycle for a long-term investor.
+Finosaur incorporates goals and consumption outflows and uses a dynamic optimization algorithm overlaid on top of standard mean-variance optimization and individual’s risk score to arrive at optimal asset allocation across the life cycle
+It extends simulation-based dynamic approach towards portfolio choice which has currently been only applied in the academic settings on a small number of assets – Finosaur is the first platform to commercially provide this leading edge approach to common investors.
+Finosaur is also the first to incorporate goals amount and timing in this dynamic asset allocation approach
+Traditionally, advisers use target date fund approach, which does not work if there is a large goal outflow during an individuals lifetime, such as buying a $1MM house
+Finosaur advises to shift to a low risk portfolio sometime before the goal to maximize probability of meeting the goals.
+In the absence of large goals, portfolio allocation is still highly personalized, but converges to target date funds.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="218" width="11" height="16" uuid="ed635c19-3afa-4d02-9eeb-cb6760c8a834"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="243" width="11" height="16" uuid="c3cff030-ee71-49b1-badd-253a7d6dcb93"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="294" width="11" height="16" uuid="2a11f14c-7cb7-4d8e-b8a6-3297418d27fb"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="344" width="11" height="16" uuid="a4b17691-3687-414d-be3a-e6f18261c938"/>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="369" width="11" height="16" uuid="2fea2c90-0300-4462-91b2-36e21b3a6460"/>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="407" width="11" height="16" uuid="d3738a70-8d15-4dc7-be9b-28ceea2eb875"/>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="432" width="11" height="16" uuid="ed723a42-e47d-416c-b3de-496b4a6aa5b9"/>
+				<text><![CDATA[7.]]></text>
+			</staticText>
+			<break>
+				<reportElement x="0" y="554" width="100" height="1" uuid="f39a098d-e82c-49a5-9c93-eae710e78898"/>
+			</break>
+			<stackedAreaChart>
+				<chart>
+					<reportElement x="398" y="119" width="394" height="304" uuid="e1d114fd-2654-4dd4-8a94-ffb570b50937"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<categoryDataset>
+					<dataset>
+						<datasetRun subDataset="MYdataset" uuid="d38f4d59-8de3-435d-8b19-c9ffbbc0ebf2">
+							<dataSourceExpression><![CDATA[$P{Page21}]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<categorySeries>
+						<seriesExpression><![CDATA[$F{seriesCategory}]]></seriesExpression>
+						<categoryExpression><![CDATA[$F{xCoordinate}]]></categoryExpression>
+						<valueExpression><![CDATA[$F{yCoordinate}]]></valueExpression>
+					</categorySeries>
+				</categoryDataset>
+				<areaPlot>
+					<plot/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</areaPlot>
+			</stackedAreaChart>
+		</band>
+		<band height="555">
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="ac694659-fc03-49c3-8c7b-df1762d82eb3"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="40" y="38" width="714" height="39" uuid="866e3690-ec9c-40ac-bcaa-7c5c6b9a08f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan- Investing: Impact Of Updated Portfolio]]></text>
+			</staticText>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="58225047-69b5-47b6-a200-c2389fa2eee5"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="14" y="476" width="18" height="1" uuid="1c36b492-9611-47ea-98f5-0d3a6a7966d5"/>
+			</line>
+			<staticText>
+				<reportElement x="14" y="480" width="19" height="25" uuid="b7505ccd-0d76-4d58-8ecd-32224d3c86f8"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="318" y="18" width="100" height="20" uuid="f58375a9-e949-4e66-a081-33cafd3096a4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="14" y="0" width="20" height="86" uuid="516ea3d2-8bd4-4b64-8f21-f52cec9be804"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="48" y="77" width="742" height="1" uuid="4a736044-d726-472d-b2f3-c8248f79808c"/>
+			</line>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="465df780-9a00-4fc1-ad61-b95cda47ce94"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="14" y="395" width="18" height="76" uuid="b520a8aa-4c6a-445f-a279-aa3713093283"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="99" width="139" height="20" uuid="69c5169b-6cc1-441f-8e7d-190f40e05138"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Asset Allocation
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="119" width="306" height="20" uuid="27a80954-cc56-4509-b7f0-213c0b8a0122"/>
+				<text><![CDATA[Median outcome has improved by over 2 times from your initial case
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="102" y="174" width="100" height="20" uuid="40e06ae6-6494-4245-a790-6a021a977159"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observations
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="194" width="304" height="277" uuid="c957a4e0-6901-4525-94e9-77367237e316"/>
+				<text><![CDATA[Primary gap in your asset allocation was absence of rigorous asset allocation – with asset allocation changes, significant improvement in return are expected
+Median outcome has improved by over 2 times from your initial case – overall wealth is twice of where you could be
+Over time asset allocation takes into account details of your lifetime income and consumption – this is one of Finosaur’s key differentiator
+Using these simulations, Finosaur establishes your best and worst case situations. Then it iterates the plan to ensure that even under the worst of situations, you will be financially comfortably positioned.
+It extends simulation-based dynamic approach towards portfolio choice which has currently been only applied in the academic settings on a small number of assets – Finosaur is the first platform to commercially provide this leading edge approach to common investors.
+There are uncertainties around life and health too, such as demise of a loved one, or the risk of outliving your savings, or long term care requirements. We can help you figure out insurance plan to prepare for the uncertainties.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="194" width="11" height="16" uuid="654d6602-61ba-41ad-bbe8-31a20c3e0b80"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="230" width="11" height="16" uuid="6aa530a9-c787-4fef-9b34-d9aa02b4bdfd"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="382" width="11" height="16" uuid="95e02450-ff4c-45c2-b869-1c6736940e2e"/>
+				<text><![CDATA[6.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="256" width="11" height="16" uuid="973b8a65-f88b-468c-a351-8a627779951e"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="281" width="11" height="16" uuid="a0124229-0cc0-4b40-accf-4e5eaf718095"/>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="319" width="11" height="16" uuid="be219d74-a0f2-4bf0-96dd-b3e10fccac47"/>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="174" width="292" height="20" uuid="f68cf9da-f7ef-4a1e-995d-018edafb405f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Calibri" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Potential financial plan which meets outlined requirements
+]]></text>
+			</staticText>
+			<xyLineChart>
+				<chart isShowLegend="false">
+					<reportElement x="391" y="194" width="401" height="286" uuid="2aac9903-abd2-4290-ac30-5e9b6e1c6c93"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend/>
+				</chart>
+				<xyDataset>
+					<dataset>
+						<datasetRun subDataset="MYdataset" uuid="d4db41a5-998d-4791-b2e8-8371a282fcd3">
+							<dataSourceExpression><![CDATA[$P{Page22}]]></dataSourceExpression>
+						</datasetRun>
+					</dataset>
+					<xySeries autoSort="true">
+						<seriesExpression><![CDATA[$F{seriesCategory}]]></seriesExpression>
+						<xValueExpression><![CDATA[$F{xCoordinate}]]></xValueExpression>
+						<yValueExpression><![CDATA[$F{yCoordinate}]]></yValueExpression>
+					</xySeries>
+				</xyDataset>
+				<linePlot isShowShapes="false">
+					<plot/>
+					<categoryAxisFormat>
+						<axisFormat/>
+					</categoryAxisFormat>
+					<valueAxisFormat>
+						<axisFormat/>
+					</valueAxisFormat>
+				</linePlot>
+			</xyLineChart>
+		</band>
+		<band height="555">
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="33984c53-53f5-45a7-9573-ee7c9ae29fa3"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="15" y="480" width="19" height="25" uuid="3105ef94-fe49-44ec-b1b8-2a064fa15ed0"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="41" y="38" width="714" height="39" uuid="bbb33885-6f35-483c-a2e1-6aac605b4f80"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan- Savings And Consumption: Savings Target]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="25e8bfb1-450f-4eb7-9580-774a38b206a9"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="15" y="395" width="18" height="76" uuid="ab47401e-9ade-45ff-89fc-f3c3f7cc83de"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="ce5918b5-f5fe-4abb-a2a8-b3e523ba8c2c"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="15" y="0" width="20" height="86" uuid="c7a10716-355c-4d6e-a486-3d8c84a8c7dd"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="15" y="476" width="18" height="1" uuid="afc6229f-ea82-4a79-86b4-b21b54df6d02"/>
+			</line>
+			<line>
+				<reportElement x="49" y="77" width="742" height="1" uuid="b2764e8f-3dec-4b4d-9470-b32640e0c7cc"/>
+			</line>
+			<staticText>
+				<reportElement x="319" y="18" width="100" height="20" uuid="d51947d0-257e-4d67-9aab-09ce0194b750"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="53" y="99" width="139" height="20" uuid="3ad745f6-77d4-4f7d-b9c3-1e8e30fa26c3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Asset Allocation
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="119" width="287" height="20" uuid="8d8f4fd2-22b3-4d95-b7e5-2bb4104568b4"/>
+				<text><![CDATA[Here is the savings action plan that will help you achieve your goals
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="152" width="100" height="20" uuid="514c8fc0-9b35-4a7b-b81b-2ed97f9d5904"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Observations
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="172" width="316" height="257" uuid="effcfb89-9c60-4f12-b93a-f0a4b5ca2c05"/>
+				<text><![CDATA[You have indicated a “strong” preference to save today vs. consume today
+When we calibrate to your current wealth, we identify that your savings have been higher than normal
+As identified earlier, with your savings, you would most likely be OK, but under unfavorable circumstances there is a chance that you may suffer from shortfalls in critical years
+
+We believe that ramping up savings may help you achieve your goals with low to almost no chances of missing your outlined goals
+
+In net, you can afford to increase consumption by as much as $30-40K per year and still be financially strong
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="271" width="11" height="16" uuid="257e4632-f04b-4487-8989-64e747ac7530"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="171" width="11" height="16" uuid="39ac28d4-55f2-4e07-92a3-2a901c1c747e"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="310" width="11" height="16" uuid="c7024d5e-2afc-4527-bbb1-09a28a9f6402"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="171" width="7" height="44" uuid="bb597a54-dd92-47f9-b1e7-ab013e680bca"/>
+				<textElement>
+					<font size="34"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="54" y="195" width="7" height="44" uuid="ed5edfc6-198e-4418-890c-b82519330cbc"/>
+				<textElement>
+					<font size="34"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="489" y="434" width="266" height="37" uuid="05bf863e-09cb-438f-b1d3-855edbef45c7"/>
+				<text><![CDATA[Note: These monthly savings levels are higher than your current savings rate by about $500/per month
+]]></text>
+			</staticText>
+			<multiAxisChart>
+				<chart isShowLegend="true" evaluationTime="Report">
+					<reportElement x="380" y="119" width="394" height="295" uuid="630cd91c-eda7-43c0-8429-878f3b774b6c"/>
+					<chartTitle/>
+					<chartSubtitle/>
+					<chartLegend position="Bottom"/>
+				</chart>
+				<multiAxisPlot>
+					<plot/>
+					<axis position="rightOrBottom">
+						<lineChart>
+							<chart isShowLegend="false" evaluationTime="Report">
+								<reportElement positionType="Float" x="0" y="25" width="270" height="175" backcolor="#FFFFFF" uuid="4a755d76-1350-4921-a0be-20ae9e485e12"/>
+								<chartTitle color="#000000"/>
+								<chartSubtitle color="#000000"/>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF" position="Right"/>
+							</chart>
+							<categoryDataset>
+								<dataset>
+									<datasetRun subDataset="chartDataSet" uuid="abec2dce-b670-4e84-b71f-469d954dbcb5">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{CHART_DATA})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["Gross Income"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{xCoordinate}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{grossIncome}]]></valueExpression>
+								</categorySeries>
+								<categorySeries>
+									<seriesExpression><![CDATA["Income After Taxes"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{xCoordinate}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{afterTaxes}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<linePlot isShowLines="true" isShowShapes="false">
+								<plot>
+									<seriesColor seriesOrder="0" color="#0033FF"/>
+									<seriesColor seriesOrder="1" color="#FF0033"/>
+								</plot>
+								<categoryAxisFormat>
+									<axisFormat/>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["Line"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="#,##0" axisLineColor="#000000"/>
+								</valueAxisFormat>
+							</linePlot>
+						</lineChart>
+					</axis>
+					<axis>
+						<barChart>
+							<chart isShowLegend="false" evaluationTime="Report">
+								<reportElement x="0" y="0" width="0" height="0" backcolor="#FFFFFF" uuid="723abd06-b593-422a-b679-043084525a8c"/>
+								<chartTitle color="#000000"/>
+								<chartSubtitle color="#000000"/>
+								<chartLegend textColor="#000000" backgroundColor="#FFFFFF" position="Right"/>
+							</chart>
+							<categoryDataset>
+								<dataset>
+									<datasetRun subDataset="chartDataSet" uuid="abec2dce-b670-4e84-b71f-469d954dbcb5">
+										<dataSourceExpression><![CDATA[new net.sf.jasperreports.engine.data.JRBeanCollectionDataSource($P{CHART_DATA})]]></dataSourceExpression>
+									</datasetRun>
+								</dataset>
+								<categorySeries>
+									<seriesExpression><![CDATA["Annual Savings"]]></seriesExpression>
+									<categoryExpression><![CDATA[$F{xCoordinate}]]></categoryExpression>
+									<valueExpression><![CDATA[$F{annualSavings}]]></valueExpression>
+								</categorySeries>
+							</categoryDataset>
+							<barPlot>
+								<plot>
+									<seriesColor seriesOrder="0" color="#CCCCCC"/>
+								</plot>
+								<itemLabel/>
+								<categoryAxisFormat>
+									<axisFormat/>
+								</categoryAxisFormat>
+								<valueAxisLabelExpression><![CDATA["Bar"]]></valueAxisLabelExpression>
+								<valueAxisFormat>
+									<axisFormat labelColor="#000000" tickLabelColor="#000000" tickLabelMask="#,##0" axisLineColor="#000000"/>
+								</valueAxisFormat>
+							</barPlot>
+						</barChart>
+					</axis>
+				</multiAxisPlot>
+			</multiAxisChart>
+		</band>
+		<band height="555">
+			<line>
+				<reportElement x="16" y="476" width="18" height="1" uuid="3409541c-299d-4704-a73e-23752fb0daf2"/>
+			</line>
+			<staticText>
+				<reportElement x="16" y="0" width="20" height="86" uuid="14fdfd84-7f56-4b7b-bbbf-a08339c8d64a"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="42" y="38" width="714" height="39" uuid="388e686b-c6cf-4cf1-9df6-1b7f411332db"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan – Insurance: Approaches ]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="c7e3d65f-2074-41b8-b960-6aa2e2998891"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="16" y="395" width="18" height="76" uuid="2f72a4f0-16f4-4c14-8324-2625b22c598e"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="480" width="19" height="25" uuid="b9324206-2613-490a-8378-c598532b41a0"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="6c12194a-3d07-47bb-a3c8-6a7ed6aebb5c"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="50" y="77" width="742" height="1" uuid="ef9b52af-9c7b-4777-8d8b-b306d46d4046"/>
+			</line>
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="81a8c293-7724-4d93-bf14-b8ad21700795"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="18" width="100" height="20" uuid="a2eb3f2b-cd0b-4e31-9b78-53db78145c63"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="69" y="99" width="100" height="20" uuid="50cfb399-47fa-4402-9a93-3392f97f6105"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Volatility
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="119" width="244" height="44" uuid="96d6bb0a-fec7-4133-9100-370ed925872e"/>
+				<text><![CDATA[Life brings with itself a number of ups and downs. A robust plan should help you overcome these volatilities
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="70" y="201" width="120" height="16" backcolor="#D1D3D5" uuid="1ef75940-c0d8-46ab-91a1-9e88f23e434a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Types of Risk
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="192" y="201" width="164" height="16" backcolor="#D1D3D5" uuid="621baf6f-a5ff-4e52-bc4c-78172a5148c0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Market Volatility
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="356" y="201" width="183" height="16" backcolor="#D1D3D5" uuid="b31859a7-6b97-459a-b5b2-3732e33ea7d8"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Life & Death
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="539" y="201" width="192" height="16" backcolor="#D1D3D5" uuid="d1f5a675-43c8-45a9-ad20-0e38db5db453"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Income Volatility
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="70" y="219" width="120" height="88" backcolor="#EDF0F2" uuid="d4bb8aa1-a2cc-4764-829a-0848003fa64f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Description
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="193" y="219" width="163" height="88" backcolor="#EDF0F2" uuid="395c65ad-e9d1-45ff-b2b5-fb96c2fef909"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Changes the market value of securities impacting ability to meet goals
+Inflation and interest rate risk
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="356" y="219" width="183" height="88" backcolor="#EDF0F2" uuid="38020b8b-baec-4ae0-9bee-801456b129fe"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Death of an earning member
+Risk of outliving your savings
+Illness or disease
+Long term care requirements
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Transparent" x="539" y="219" width="192" height="88" backcolor="#EDF0F2" uuid="75355fe2-f4f6-4d6b-865c-e3ea4db402c3"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Up and downs in salary and other income
+Potential of some years with no income
+Potential to see some permanent jump in income profiles
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="70" y="309" width="121" height="88" backcolor="#E2E4E6" uuid="775edf96-ba24-4a1b-9ea9-7e66bdd1b716"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Market Volatility
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="194" y="309" width="161" height="88" backcolor="#E2E4E6" uuid="df95b85d-5782-43e8-b8b4-d0d71ad1d55a"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Diversification
+Goals based asset allocation, e.g. education funding
+Rebalancing]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="354" y="309" width="185" height="88" backcolor="#E2E4E6" uuid="28c3abd3-9145-422a-8886-c3d9488cda4e"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Life Insurance
+Health insurance
+Long term care
+Estate planning
+Wills
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="539" y="309" width="192" height="88" backcolor="#E2E4E6" uuid="2170b7a2-0b0a-4996-8f8a-f42bd0c04f7b"/>
+				<textElement verticalAlignment="Middle">
+					<font isBold="false"/>
+				</textElement>
+				<text><![CDATA[Wealth accumulation
+Disability insurance
+Retirement income including annuities]]></text>
+			</staticText>
+		</band>
+		<band height="555">
+			<staticText>
+				<reportElement x="17" y="0" width="20" height="86" uuid="3b1c15a0-61ee-4599-9c88-fdd8efa0d4da"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="395" width="18" height="76" uuid="e35ad6e3-3285-402e-8206-6fe5f8925ae6"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="321" y="18" width="100" height="20" uuid="f9331e24-42c9-4ae4-93e7-a5b0ca3140c6"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="480" width="19" height="25" uuid="44089036-23dd-4b8b-ac63-4b1178854093"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="43" y="38" width="714" height="39" uuid="bc57f84f-136a-4104-8768-7fe1a579225b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan – Insurance: Life Insurance Principles]]></text>
+			</staticText>
+			<line>
+				<reportElement x="17" y="476" width="18" height="1" uuid="31414afa-802d-4847-8b01-ce3c590a2da7"/>
+			</line>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="233ea633-9de2-4cc5-92e6-243eeb7420f4"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="dec03d87-368a-4570-805f-78572e0adb51"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<line>
+				<reportElement x="51" y="77" width="742" height="1" uuid="d8fff614-560e-4886-a086-97dce28f6080"/>
+			</line>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="c7f30cf8-1c71-4da5-823c-ffd3f3078bca"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="405" y="101" width="1" height="430" uuid="1be09386-4e50-415e-ab79-dfa4bc7ceea5"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="85" y="103" width="135" height="20" uuid="07e91c24-8bd5-4681-98e5-06b8468e8658"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Life Insurance – Need
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="136" width="320" height="40" uuid="111b088c-e35a-43a3-9e96-40f5e22ffeb7"/>
+				<text><![CDATA[Some families may need life insurance to cover immediate obligations and provide future income for household sustenance
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="67" y="165" width="237" height="20" uuid="cc749db6-c8e9-47ea-9e50-1e98d10a7132"/>
+				<text><![CDATA[Your life is financially valuable to your family
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="68" y="182" width="321" height="27" uuid="08cc3cd3-319a-4036-be30-1a9386affce4"/>
+				<text><![CDATA[As we saw in page <15> waterfall, your income represents <one of the> most important asset in your lifetime
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="165" width="11" height="16" uuid="fb40d9e8-3168-4c0e-b27b-c841f8219a25"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="168" width="11" height="29" uuid="56d1d799-1c16-44d5-8429-46127c5b20bd"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="64" y="209" width="108" height="20" uuid="30253e2d-29bc-4530-865b-4bf2d8f1998b"/>
+				<text><![CDATA[Your life is vulnerable
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="210" width="11" height="16" uuid="dc242c0d-bbdd-42a6-9a78-55f8ae3a6a84"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="229" width="315" height="39" uuid="ac040ccc-036e-4895-bd0e-a81bb7f7e682"/>
+				<text><![CDATA[For the financial security of your family and future happiness, it may be important for you to protect against an earnings loss from a catastrophic event such as death of an earning member
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="216" width="11" height="29" uuid="abe79b2a-30e8-40f5-aafd-2f7d31cce39c"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="268" width="323" height="20" uuid="f010608c-49ed-4df4-b33b-747dba6900e3"/>
+				<text><![CDATA[Finosaur life insurance analysis depends on two questions:
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="268" width="11" height="16" uuid="0ff8f64d-9f0c-4b81-95ff-e0e8faa20a42"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="288" width="307" height="20" uuid="02c72b1b-f1ae-4764-be62-342ea6cf7e4d"/>
+				<text><![CDATA[Amount needed at death to meet immediate obligations?
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="287" width="11" height="16" uuid="d455df47-a347-4c04-84f8-e9c3db61691b"/>
+				<text><![CDATA[A.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="308" width="306" height="42" uuid="4361bfd9-d004-4f02-93be-52f8f424cc73"/>
+				<text><![CDATA[mortgage balance and other outstanding debt, funeral expenses, outstanding medical bills, readjustment costs, estate-settling costs, business continuity, etc.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="295" width="11" height="29" uuid="73cecb25-9240-492f-bc4a-a56b39400a20"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="350" width="290" height="20" uuid="0837d98c-e2d7-40ff-9517-e1e8f1463b84"/>
+				<text><![CDATA[Future income is needed to sustain the household?
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="56" y="349" width="11" height="16" uuid="272def89-6f8c-40db-9cb8-6bc687f6d7a2"/>
+				<text><![CDATA[B.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="66" y="370" width="306" height="37" uuid="6eb250a8-7e3a-47a7-8aa7-9e7d3abdd316"/>
+				<text><![CDATA[Taking into account household consumptions, spouse income and longer term goals e.g., college costs to name a few
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="356" width="11" height="29" uuid="133028c8-506c-4b6a-aa38-18ab41303496"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="51" y="400" width="164" height="154" uuid="46cc3cee-5154-4339-9178-77ebb14f5c60"/>
+				<imageExpression><![CDATA["pic\\pic27.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="154" y="410" width="226" height="103" uuid="557691b1-3363-4f15-b784-7f0c7340d05d"/>
+				<text><![CDATA[The economic value of a human life arises out of its relations to other lives. Whenever continuance of a life is financially valuable to others, either to family dependents, business associates, or educational and philanthropic situations, the necessity for life insurance is present.
+Solomon S. Huebner, Founder and first President of The American College, 1927
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="103" width="252" height="20" uuid="f6c72d65-5be5-48b9-ae75-3b7cec9377e5"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Life Insurance – Key Type of Products
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="136" width="327" height="29" uuid="96072a40-e7e9-4198-abe5-96384ca156d6"/>
+				<text><![CDATA[There are multiple products that are out there. We believe that term life insurance may work best for you
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="169" width="100" height="20" uuid="992957f7-1056-49f6-ae80-9abb879d4748"/>
+				<text><![CDATA[Term Life Insurance
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="440" y="189" width="334" height="110" uuid="89c41dfa-de6f-414a-906f-bd9cb634f013"/>
+				<text><![CDATA[Pure protection product
+Terms of 1-30 years
+May come with some riders, which can enhance the policy, e.g., return the premium
+Recent products offer long-term premium guarantees, where the premium is guaranteed to be the same for a given period of time
+Most competitively priced and a large part of the value is accrued to the customer/ policyholder
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="189" width="11" height="16" uuid="90c59554-b397-4db8-8689-c81f825708c2"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="430" y="200" width="11" height="16" uuid="8d4cf2c3-cba9-493f-bd3a-e2caf843f423"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="213" width="11" height="16" uuid="90570765-abeb-4146-ad53-68d7510d638c"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="239" width="11" height="16" uuid="0d43f0ff-af48-4e95-9564-d07f8a63a8f3"/>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="429" y="263" width="11" height="16" uuid="cf2f6a9c-96c6-41d2-8ed8-f687248caecd"/>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="303" width="100" height="20" uuid="daf49465-0ce8-4242-91d7-34fc57e0dfa9"/>
+				<text><![CDATA[Permanent Life
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="441" y="332" width="317" height="144" uuid="ba3caa12-2b34-4042-8eaf-17681f388f49"/>
+				<text><![CDATA[Provides death benefits and cash value
+Cash surrender value is paid if policy holder decides to cancel the policy
+Up to Lifetime term
+Cash value, which may be guaranteed (for Whole Life) or variable (for guaranteed universal life and index universal life)
+Premiums can be fixed or flexible
+A large portion of Whole life insurance may go as a fees to agents and other admin fees
+May be best to use a combination of term life with Finosaur investment plan
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="332" width="11" height="16" uuid="18ecf41c-5eea-45e8-a329-bdca2f0b5ccf"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="330" width="11" height="29" uuid="080a689b-5295-4ad2-93bc-7715a2562265"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="357" width="11" height="16" uuid="352b7680-f691-47cb-9456-c6d27b227bb6"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="369" width="11" height="16" uuid="cb5642f6-b2df-44d9-9aaf-c60051f71f20"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="394" width="11" height="16" uuid="62daf813-bf8e-470a-aad6-ec1ef7435429"/>
+				<text><![CDATA[4.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="407" width="11" height="16" uuid="ff37ad9b-41aa-4ec3-9231-c9d5efc6acb0"/>
+				<text><![CDATA[5.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="433" y="419" width="11" height="29" uuid="f771e616-e9d8-42ad-96c9-948950f6293c"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+		</band>
+		<band height="555">
+			<staticText>
+				<reportElement x="12" y="10" width="20" height="86" uuid="2ee868bc-cffd-4a12-b57e-9eca24d74dec"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="490" width="19" height="25" uuid="d3e5e947-bade-4991-a280-fbb39e0f016f"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="beca3857-771e-4ac1-99ba-cf1e0776bbae"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="12" y="486" width="18" height="1" uuid="00f0cc7f-d48f-4cbe-892d-4dd52b1f3df6"/>
+			</line>
+			<staticText>
+				<reportElement x="12" y="405" width="18" height="76" uuid="bd3ad4b6-24a1-4495-bad1-b803facca1b9"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="316" y="28" width="100" height="20" uuid="5d1c997e-28ce-4809-a38b-35501755d4d2"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="878fc2cf-b460-4c13-85de-27db043612eb"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="45" width="714" height="39" uuid="a84c87ce-6bdc-4ac8-b41c-31d8ac5b03e7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan – Insurance: Life Insurance Requirements]]></text>
+			</staticText>
+			<line>
+				<reportElement x="46" y="87" width="742" height="1" uuid="0ad2626a-e71a-4448-96c2-142163022262"/>
+			</line>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="a6236d2f-b371-40f6-a622-e2bd21d60d83"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="72" y="113" width="135" height="20" uuid="4b90a220-9ae6-4137-8d0e-284f7bf3b1dc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Life Insurance Analysis
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="136" width="338" height="20" uuid="f94c8dd1-e6e3-4d8f-9bd8-b22dcfb03c25"/>
+				<text><![CDATA[Based on a detailed calculations of your cash flows, specifically at the death
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="58" y="160" width="100" height="20" uuid="993e5dec-681b-49c9-a991-6fe3d7a48111"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Life Insurance Overview
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="59" y="194" width="348" height="163" uuid="46847cef-4381-4bf2-8da0-b918cd046826"/>
+				<text><![CDATA[Minimum Life Insurance to Fund Needs: $643,873
+
+At John’s death, without life insurance, we expect that you will incur shortfall just before retirement and about 15 years after retirement
+Assumed spouse works part time and earns half of current salary
+
+We would recommend term life policy for the next 30 years, which should incur premiums  of $100 per month
+Please approach finosaur with questions or support on the policy selection
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="219" width="11" height="16" uuid="28c0ba09-d0ba-4d9a-ac0b-af82a32c56c2"/>
+				<text><![CDATA[2.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="49" y="193" width="11" height="16" uuid="9d37f820-1942-4bb4-80d0-941dc2da9b61"/>
+				<text><![CDATA[1.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="269" width="11" height="16" uuid="fc97cbeb-5927-4f85-9375-07d2574d686a"/>
+				<text><![CDATA[3.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="51" y="281" width="11" height="29" uuid="70f650da-45e8-4bd0-80d6-d285f352e4f9"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="65" y="463" width="343" height="27" uuid="65675080-4882-45a4-99a4-808b788394ce"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Assumptions: Additional insurance proceeds assumed to grow at a rate of 6.0%. Growth in various qualified and non-qualified accounts growth rates based on individual holdings.
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="417" y="113" width="382" height="388" uuid="c5fff4a7-b999-4714-8789-a8d682d534cb"/>
+				<imageExpression><![CDATA["pic\\pic28.png"]]></imageExpression>
+			</image>
+		</band>
+		<band height="555">
+			<staticText>
+				<reportElement x="11" y="490" width="19" height="25" uuid="54e19ae7-1be5-49f4-bd21-36695b42d166"/>
+				<textElement textAlignment="Center">
+					<font size="16"/>
+				</textElement>
+				<text><![CDATA[9]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="405" width="18" height="76" uuid="fbc74770-2642-42d0-934b-65f4f152756b"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[S T E P  - 0 2
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="12" y="10" width="20" height="86" uuid="0b65759b-0162-4887-812a-9b522a73c5af"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="5dda6fc6-e840-4667-88e2-13c752407176"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="7e914521-3b6a-447c-aefe-0c0ca4c17d4a"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="61" y="45" width="714" height="39" uuid="086e0cbc-b442-4d0d-aab3-e3a3d81d326d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[Financial Action Plan – Taxes: Tax Minimization Approaches
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="315" y="28" width="100" height="20" uuid="66feef8a-ce96-45d8-900f-da315d98a1bf"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[S T E P - 02
+]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="486" width="18" height="1" uuid="08f5bcbd-62b2-4ef6-9626-708f8200ce35"/>
+			</line>
+			<line>
+				<reportElement x="45" y="87" width="742" height="1" uuid="b58a0aee-37e2-4ee3-b481-7d9f76ba9414"/>
+			</line>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="9d5671ff-8fd9-4b3e-b4a6-30e69ae8b219"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="70" y="111" width="100" height="20" uuid="300b1fb5-9900-4446-926b-fcba748d715f"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tax Approach
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="46" y="131" width="283" height="20" uuid="639ace4e-3cd4-4219-8150-afbf37ac7fa6"/>
+				<text><![CDATA[We highlight a number of approaches to minimize taxes
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="52" y="157" width="195" height="20" uuid="f5d43146-a9d5-4d51-932c-d893a0841631"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Tax Minimization Approaches
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="50" y="210" width="736" height="20" backcolor="#D1D3D5" uuid="cf81b66b-1500-401b-ab25-00b676c73d21"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="50" y="232" width="736" height="107" backcolor="#EDF0F2" uuid="38acb4e3-5a2f-48b7-a591-fbacb2b66880"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement mode="Opaque" x="50" y="341" width="736" height="162" backcolor="#E2E4E6" uuid="ed018a60-17a8-4582-97b9-d3a44906d130"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<line>
+				<reportElement x="366" y="210" width="1" height="293" forecolor="#FFFFFF" uuid="61b2b05e-b10c-4d80-9e0e-b09703f283a0"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="112" y="211" width="100" height="20" uuid="50930f8a-e2dc-4ff2-8c84-3ef60582f7f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Strategy]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="442" y="211" width="134" height="20" uuid="c0bdbb34-fb7d-4732-8abc-f2cef2c093ac"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Action Item
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="61" y="255" width="63" height="58" uuid="f28bf96e-8f08-496a-b3d2-24ab34d9417f"/>
+				<textElement verticalAlignment="Middle"/>
+				<text><![CDATA[Employment Income Tax Strategies
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="172" y="243" width="182" height="20" uuid="cce142c1-f743-4af3-a1cb-fc3599b7f5c5"/>
+				<text><![CDATA[Maximize 401K contribution
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="169" y="293" width="185" height="30" uuid="af9f563e-0efd-42c9-97c9-dd74cc109cc1"/>
+				<text><![CDATA[Buy house on mortgage to get mortgage interest deduction
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="402" y="236" width="374" height="103" uuid="92a183f1-26a4-4f04-ac1e-4c3c8b8c7818"/>
+				<textElement>
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[Increase annual 401K contribution to maximum allowed $18500
+Get the “free” matching money from the employer
+Tax deferral is a strong driver of returns – Given your tax rates are likely to be lower post-retirement, 401K contribution is an important strategy
+Typical rule of thumb is you should buy a house if you expect to live there for more than 5 years
+For developing an overall business case for house purchase – feel free to contact Finosaur
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="387" width="73" height="39" uuid="736d0b65-2334-4354-b863-ea5e8646f3c1"/>
+				<text><![CDATA[Capital Gains Tax Strategies
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="345" width="100" height="20" uuid="95da7229-24a6-4394-a0a5-4b01100921cf"/>
+				<text><![CDATA[Tax Location
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="382" width="100" height="20" uuid="1edcf918-5709-406e-b0f7-41ab82c5e964"/>
+				<text><![CDATA[Tax Efficiency
+
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="248" y="425" width="100" height="20" uuid="dc17fef0-3119-4333-8229-295da805a295"/>
+				<text><![CDATA[Tax-loss harvesting
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="231" y="472" width="118" height="20" uuid="a3ccf4dd-8cfa-4ef2-85b7-deeb3bb67f98"/>
+				<text><![CDATA[Buy tax deferred I-bonds
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="343" width="367" height="30" uuid="cb11a481-a953-45f0-aa8f-c35857fe7c64"/>
+				<text><![CDATA[Put income-generating assets in tax-deferred accounts
+Put capital-gain generating assets in taxable account]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="379" width="341" height="27" uuid="98b4b4f7-5a55-46a0-9b19-381da344518b"/>
+				<text><![CDATA[Avoid Tax-inefficient mutual funds
+Use ETFs and tax-managed individual stocks
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="416" width="383" height="40" uuid="51cf238e-cc7c-41bb-9fab-bdcbeb06ea39"/>
+				<text><![CDATA[Identify and sell securities with unrealized tax-losses to offset taxable gains and reduce your taxes
+Replace with an equity with similar exposure
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="461" width="388" height="47" uuid="90dadbd5-2062-41f5-afce-947d203edd7b"/>
+				<text><![CDATA[I-Bonds can fill in important gaps in your safety zone. They give low real returns over inflation, but cannot go down in value. They may be better than CDs in some situations as they can grow tax deferred
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="381" y="449" width="11" height="29" uuid="ce354c6d-0563-4627-9150-13c811fbfb85"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="428" width="11" height="29" uuid="ced956ad-15be-4c60-8545-eff97f9d1d04"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="402" width="11" height="29" uuid="9ec0029f-65b1-46f4-bb46-66ec31d725f2"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="377" width="11" height="29" uuid="ba1f502b-8bf1-4ec2-8c8d-fdbe3ae41104"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="365" width="11" height="29" uuid="70bbb370-f0c6-4074-9ecc-293c9a154c0c"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="383" y="341" width="11" height="29" uuid="d91acf88-77f1-4087-99bb-0394874f9946"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="329" width="11" height="29" uuid="a83ac2aa-bdf9-46c4-9f9d-2a2c33fe39b5"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="222" width="11" height="29" uuid="f0be45f9-fe84-4823-a6ce-f491b010b32f"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="235" width="11" height="29" uuid="850bcade-d117-4aeb-9d2e-23756fa7154d"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="247" width="11" height="29" uuid="de99cc2c-65fc-4e2c-939b-36ee5e1f5e7f"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="273" width="11" height="29" uuid="c76b3a63-0da3-4baf-90a2-a3183dffe1e2"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="392" y="297" width="11" height="29" uuid="b388d0d3-9054-4bc2-903f-80ba781a4c39"/>
+				<textElement>
+					<font size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[.]]></text>
+			</staticText>
+		</band>
+		<band height="555">
+			<staticText>
+				<reportElement x="9" y="107" width="18" height="244" uuid="f0ae1c3e-ad09-41c0-bffa-43b09fd143f1"/>
+				<textElement verticalAlignment="Middle" rotation="Left"/>
+				<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="11" y="10" width="20" height="86" uuid="5dfb0bf7-e4ca-4382-90e9-552bc177169a"/>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<image>
+				<reportElement x="9" y="76" width="64" height="30" uuid="eb36a370-9e18-4d7d-a7a6-34f187f76117"/>
+				<imageExpression><![CDATA["pic\\pic18.png"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="32" y="63" width="1" height="422" uuid="6229800f-7344-4156-8d9c-da0a8477d86e"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<staticText>
+				<reportElement x="419" y="84" width="100" height="20" forecolor="#00ACFF" uuid="68a17671-457e-4f24-a629-2dc92dd24734"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Disclosures
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="115" width="305" height="20" forecolor="#00ACFF" uuid="d312817e-aa21-4209-a5e3-9583d87ec917"/>
+				<textElement>
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[Information in this Financial Plan is for educational purposes only.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="390" y="144" width="365" height="56" uuid="6872201f-797e-41d9-88fc-942f80b00e88"/>
+				<text><![CDATA[The suggestions here are neither appropriate for the purposes of making a decision to carry out a transaction or trade, nor do they provide any tax or legal advice or make any recommendations regarding particular financial instruments, investments, or products
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="205" width="342" height="41" uuid="5e9b9df3-8497-4c3d-806c-3dae29eab2a8"/>
+				<text><![CDATA[IMPORTANT: This Financial Action Plan is based on your online financial profile and any other information provided by you about your financial situation and goals.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="258" width="342" height="50" uuid="b705472f-30e7-41c7-a63e-0dc06cdb3f76"/>
+				<text><![CDATA[Finosaur Planning Services assumes all information you have provided is accurate and does not independently verify the accuracy of any such information.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="322" width="342" height="41" uuid="45f4010d-08ee-49df-be2f-b8ca5380e747"/>
+				<text><![CDATA[Unless we state otherwise, this plan uses hypothetical assumptions that you believe are reasonable for inflation and rates of return on assets that are not guarantees or projections.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="370" width="342" height="35" uuid="9c9c5366-2922-4740-a5bb-0f909edda7cf"/>
+				<text><![CDATA[Nothing in this presentation should be construed as a solicitation or offer, or recommendation, to buy or sell any security.
+]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="389" y="418" width="342" height="36" uuid="c2b04500-2688-44f6-b954-23a16b5046ef"/>
+				<text><![CDATA[Finosaur and its Planners are not registered advisors, brokers, dealers, attorneys, tax advisors, or insurance agents
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="49" y="135" width="382" height="331" uuid="715fff8a-fb7e-4094-af31-9f69eb535e02"/>
+				<imageExpression><![CDATA["pic\\pic17.gif"]]></imageExpression>
+			</image>
+		</band>
+		<band height="555">
+			<frame>
+				<reportElement mode="Opaque" x="0" y="0" width="802" height="555" backcolor="#2EA2DB" uuid="300eac81-51c3-4f14-bbd7-8f9ce0b69649"/>
+				<staticText>
+					<reportElement x="9" y="107" width="18" height="244" uuid="53427c00-dc26-42a2-a2ed-4c4dc0db7034"/>
+					<textElement verticalAlignment="Middle" rotation="Left"/>
+					<text><![CDATA[Attorney Client Privileged  |  For Internal Use Only]]></text>
+				</staticText>
+				<image>
+					<reportElement x="249" y="262" width="274" height="44" uuid="64edf3b8-974b-46cf-9e77-bc46a93d7fd6"/>
+					<imageExpression><![CDATA["pic\\pic1.png"]]></imageExpression>
+				</image>
+				<staticText>
+					<reportElement x="307" y="343" width="100" height="20" forecolor="#FFFFFF" uuid="8d2e02de-fbf9-4978-8436-fe072997fb15"/>
+					<textElement textAlignment="Center" verticalAlignment="Middle">
+						<font isBold="true"/>
+					</textElement>
+					<text><![CDATA[© Finosaur
+]]></text>
+				</staticText>
+			</frame>
+		</band>
+	</detail>
+</jasperReport>
